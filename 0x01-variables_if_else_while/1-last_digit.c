@@ -10,12 +10,12 @@
 int main(void)
 {
 	{
-		int n = -98;
+		int n;
 		unsigned int last_digit;
 		char *state;
 
 		srand(time(0));
-		/*n = rand() - RAND_MAX / 2; */
+		n = rand() - RAND_MAX / 2;
 
 		last_digit = abs(n % 10);
 
