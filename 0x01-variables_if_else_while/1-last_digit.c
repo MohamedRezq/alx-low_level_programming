@@ -10,12 +10,12 @@
 int main(void)
 {
 	{
-		int n;
-		int last_digit;
+		int n = -98;
+		unsigned int last_digit;
 		char *state;
 
 		srand(time(0));
-		n = rand() - RAND_MAX / 2;
+		/*n = rand() - RAND_MAX / 2; */
 
 		last_digit = abs(n % 10);
 
@@ -35,7 +35,7 @@ int main(void)
 			}
 		}
 
-		printf("Last digit of %i is %i %s\n", n, last_digit, state);
+		printf("Last digit of %i is %d %s", n, last_digit, state);
 
 		return (0);
 	}
