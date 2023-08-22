@@ -16,7 +16,7 @@ int main(void)
 		putchar(i);
 		if (i == 57)
 		{
-			putchar(36);
+			putchar(10);
 			continue;
 		}
 
