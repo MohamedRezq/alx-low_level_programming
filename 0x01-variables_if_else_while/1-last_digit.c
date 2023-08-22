@@ -1,3 +1,4 @@
+// Online C compiler to run C program online
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -17,21 +18,21 @@ int main(void)
 		srand(time(0));
 		n = rand() - RAND_MAX / 2;
 
-		last_digit = n % 10;
+		last_digit = abs(n % 10);
 
-		if (last_digit < 5)
+		if (last_digit == 0)
 		{
-			state = "and is greater than 5";
+			state = "and is 0";
 		}
 		else
 		{
-			if (last_digit == 0)
+			if (last_digit < 6)
 			{
-				state = "and is 0";
+				state = "and is less than 6 and not 0";
 			}
 			else
 			{
-				state = "and is less than 6 and not 0";
+				state = "and is greater than 5";
 			}
 		}
 
